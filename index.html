@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Reserva de Horas</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <form
+      class="form"
+      id="form"
+      action="index.html"
+      method="post"
+      onsubmit="return false"
+    >
+      <h1>Reserva de Horas</h1>
+      <div class="form__rut">
+        <label for="rut">RUT</label>
+        <input
+          type="text"
+          class="form-control"
+          id="rut"
+          placeholder="Ingresa tu RUT"
+        />
+      </div>
+      <br />
+      <div class="form__nombre">
+        <label for="nombre">Nombre</label>
+        <input
+          type="text"
+          class="form-control"
+          id="nombre"
+          placeholder="Escribe tu Nombre"
+        />
+      </div>
+      <br />
+      <div class="form__apellidos">
+        <label for="apellidos">Apellidos</label>
+        <input
+          type="text"
+          class="form-control"
+          id="apellidos"
+          placeholder="Escribe tus Apellidos"
+        />
+      </div>
+      <br />
+      <div class="form__edadmail row">
+        <div class="form__edad col-lg-3">
+          <label for="edad">Edad</label>
+          <input
+            type="text"
+            class="form-control"
+            id="edad"
+            placeholder="Edad"
+          />
+        </div>
+        <div class="form__email col-lg-9">
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="E-mail"
+          />
+        </div>
+      </div>
+      <br />
+      <div class="form__especialidades">
+        <label for="especia">Especialidades</label>
+        <select class="form-control" id="especia">
+          <option>Radiología</option>
+          <option>Traumatología</option>
+          <option>Dental</option>
+        </select>
+      </div>
+      <br />
+      <div class="form__fechas row">
+        <div class="form__fecha col-lg-6">
+          <label for="fecha">Fecha</label>
+          <input
+            type="text"
+            class="form-control"
+            id="fecha"
+            placeholder="dd-mm-aaaa"
+          />
+        </div>
+        <div class="form__hora col-lg-6">
+          <label for="hora">Hora</label>
+          <select class="form-control" id="hora">
+            <option>09:00</option>
+            <option>09:30</option>
+            <option>10:00</option>
+            <option>10:30</option>
+            <option>11:00</option>
+            <option>11:30</option>
+            <option>12:00</option>
+            <option>12:30</option>
+            <option>13:00</option>
+            <option>13:30</option>
+            <option>14:00</option>
+          </select>
+        </div>
+      </div>
+      <br />
+      <div class="boton">
+        <button type="submit" id="boton" class="btn btn-primary">
+          Reservar
+        </button>
+      </div>
+      <br />
+      <div class="confirmacion">
+        <p id="form__confirmacion"></p>
+      </div>
+    </form>
+
+    <script type="text/javascript" src="assets/js/script.js"></script>
+  </body>
+</html>
